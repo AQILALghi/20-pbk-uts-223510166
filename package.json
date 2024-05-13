@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "flatpickr": "^4.6.13",
-    "vue": "^3.0.4"
+    "vue": "^3.4.27"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.4",
