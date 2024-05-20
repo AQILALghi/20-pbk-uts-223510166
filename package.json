@@ -6,6 +6,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "firebase": "^10.11.1",
     "flatpickr": "^4.6.13",
     "vue": "^3.4.27"
   },
