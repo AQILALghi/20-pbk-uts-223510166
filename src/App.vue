@@ -27,7 +27,14 @@
         </div>
       </div>
       <div v-else-if="selectedMenu === 'Todos'" class="todos-section">
-        <Todos :todos="todos" />
+        <!-- Menggunakan komponen Todos dan melewatkan prop todos -->
+        <Todos :todos="todos">
+          <!-- Ini adalah slot default untuk komponen Todos -->
+          <template v-slot:default="{ todo }">
+            <p>{{ todo.title }}</p>
+            <!-- Anda dapat menambahkan elemen atau logika tambahan di sini -->
+          </template>
+        </Todos>
       </div>
     </div>
   </div>
